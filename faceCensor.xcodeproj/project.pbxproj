@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		26086F1E21163FD300C6F473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26086F1D21163FD300C6F473 /* AppDelegate.swift */; };
-		26086F2021163FD300C6F473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26086F1F21163FD300C6F473 /* ViewController.swift */; };
-		26086F2321163FD300C6F473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26086F2121163FD300C6F473 /* Main.storyboard */; };
+		26086F2021163FD300C6F473 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26086F1F21163FD300C6F473 /* MainViewController.swift */; };
 		26086F2521163FD400C6F473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26086F2421163FD400C6F473 /* Assets.xcassets */; };
 		26086F2821163FD400C6F473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26086F2621163FD400C6F473 /* LaunchScreen.storyboard */; };
+		26218F602116582500CD0A77 /* VideoPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26218F5F2116582500CD0A77 /* VideoPreviewVC.swift */; };
+		26218F622116625F00CD0A77 /* PhotoPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26218F612116625F00CD0A77 /* PhotoPreviewVC.swift */; };
+		26218F642116699700CD0A77 /* vidPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26218F632116699700CD0A77 /* vidPreviewVC.swift */; };
+		6A4C85677ED2EDD0DB9FC075 /* Pods_faceCensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63DB651CF49E0D36F280CBA /* Pods_faceCensor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26086F1A21163FD300C6F473 /* faceCensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceCensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26086F1D21163FD300C6F473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26086F1F21163FD300C6F473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26086F2221163FD300C6F473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26086F1F21163FD300C6F473 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		26086F2421163FD400C6F473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26086F2721163FD400C6F473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26086F2921163FD400C6F473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26218F5F2116582500CD0A77 /* VideoPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewVC.swift; sourceTree = "<group>"; };
+		26218F612116625F00CD0A77 /* PhotoPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewVC.swift; sourceTree = "<group>"; };
+		26218F632116699700CD0A77 /* vidPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidPreviewVC.swift; sourceTree = "<group>"; };
+		77B8C844DEEAD9475286EF71 /* Pods-faceCensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceCensor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-faceCensor/Pods-faceCensor.debug.xcconfig"; sourceTree = "<group>"; };
+		E63DB651CF49E0D36F280CBA /* Pods_faceCensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceCensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9ACE6C61EBD915C4AE3C16 /* Pods-faceCensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faceCensor.release.xcconfig"; path = "Pods/Target Support Files/Pods-faceCensor/Pods-faceCensor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4C85677ED2EDD0DB9FC075 /* Pods_faceCensor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				26086F1C21163FD300C6F473 /* faceCensor */,
 				26086F1B21163FD300C6F473 /* Products */,
+				9244F5C65527D22AC1F3E5A5 /* Pods */,
+				B7C0FD3B56C3BEEA9C85A518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				26086F1D21163FD300C6F473 /* AppDelegate.swift */,
-				26086F1F21163FD300C6F473 /* ViewController.swift */,
-				26086F2121163FD300C6F473 /* Main.storyboard */,
+				26086F1F21163FD300C6F473 /* MainViewController.swift */,
 				26086F2421163FD400C6F473 /* Assets.xcassets */,
 				26086F2621163FD400C6F473 /* LaunchScreen.storyboard */,
 				26086F2921163FD400C6F473 /* Info.plist */,
+				26218F5F2116582500CD0A77 /* VideoPreviewVC.swift */,
+				26218F612116625F00CD0A77 /* PhotoPreviewVC.swift */,
+				26218F632116699700CD0A77 /* vidPreviewVC.swift */,
 			);
 			path = faceCensor;
+			sourceTree = "<group>";
+		};
+		9244F5C65527D22AC1F3E5A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77B8C844DEEAD9475286EF71 /* Pods-faceCensor.debug.xcconfig */,
+				EF9ACE6C61EBD915C4AE3C16 /* Pods-faceCensor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7C0FD3B56C3BEEA9C85A518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63DB651CF49E0D36F280CBA /* Pods_faceCensor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26086F2C21163FD400C6F473 /* Build configuration list for PBXNativeTarget "faceCensor" */;
 			buildPhases = (
+				F1658CBAC98D1B4517E874FB /* [CP] Check Pods Manifest.lock */,
 				26086F1621163FD300C6F473 /* Sources */,
 				26086F1721163FD300C6F473 /* Frameworks */,
 				26086F1821163FD300C6F473 /* Resources */,
+				F1D9276B6C1A17AD6082BED8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +156,68 @@
 			files = (
 				26086F2821163FD400C6F473 /* LaunchScreen.storyboard in Resources */,
 				26086F2521163FD400C6F473 /* Assets.xcassets in Resources */,
-				26086F2321163FD300C6F473 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1658CBAC98D1B4517E874FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-faceCensor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D9276B6C1A17AD6082BED8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-faceCensor/Pods-faceCensor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyCam.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-faceCensor/Pods-faceCensor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26086F1621163FD300C6F473 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26086F2021163FD300C6F473 /* ViewController.swift in Sources */,
+				26218F622116625F00CD0A77 /* PhotoPreviewVC.swift in Sources */,
+				26218F642116699700CD0A77 /* vidPreviewVC.swift in Sources */,
+				26086F2021163FD300C6F473 /* MainViewController.swift in Sources */,
 				26086F1E21163FD300C6F473 /* AppDelegate.swift in Sources */,
+				26218F602116582500CD0A77 /* VideoPreviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26086F2121163FD300C6F473 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26086F2221163FD300C6F473 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26086F2621163FD400C6F473 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,10 +345,13 @@
 		};
 		26086F2D21163FD400C6F473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77B8C844DEEAD9475286EF71 /* Pods-faceCensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y979V2DJTF;
 				INFOPLIST_FILE = faceCensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +365,13 @@
 		};
 		26086F2E21163FD400C6F473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9ACE6C61EBD915C4AE3C16 /* Pods-faceCensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y979V2DJTF;
 				INFOPLIST_FILE = faceCensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
